@@ -1,0 +1,16 @@
+{
+  "name": "Torrent magnet finder",
+  "version": "0.1",
+  "description": "Search into the page content for the magnet download urls.",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "css": ["assets/css/style.css"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "assets/imgs/icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "tabs", "<all_urls>"]
+}

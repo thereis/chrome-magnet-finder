@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+#message {
+  display: flex;
+  padding-top: 10px;
+  font-size: 14px;
+  justify-content: center;
+  align-content: center;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+.result {
+  margin-top: 10px;
+  background-color: #145a32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+.result:hover {
+  background: #0c351e;
+}
