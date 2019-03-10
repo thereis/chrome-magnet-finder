@@ -38,7 +38,9 @@ displayResults = results => {
   });
 
   // resultsDiv.innerHTML = results;
-  return `We have found ${results.length} magnets available!`;
+  return `We have found ${results.length} ${
+    results.length > 1 ? `magnets` : `magnet`
+  } to be downloaded.`;
 };
 
 window.onload = onWindowLoad;

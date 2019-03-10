@@ -1,16 +1,22 @@
 {
-  "name": "Torrent magnet finder",
-  "version": "0.1",
-  "description": "Search into the page content for the magnet download urls.",
   "manifest_version": 2,
-  "content_scripts": [
-    {
-      "css": ["assets/css/style.css"]
-    }
-  ],
+  "name": "Torrent magnet finder",
+  "version": "1.0.0",
+  "description": "It goes through the html page content searching for magnet links.",
+  "content_scripts": [],
+  "icons": {
+    "16": "assets/imgs/16.png",
+    "48": "assets/imgs/48.png",
+    "128": "assets/imgs/128.png"
+  },
   "browser_action": {
-    "default_icon": "assets/imgs/icon.png",
+    "default_icon": {
+      "16": "assets/imgs/16.png",
+      "48": "assets/imgs/48.png",
+      "128": "assets/imgs/128.png"
+    },
     "default_popup": "popup.html"
   },
-  "permissions": ["activeTab", "tabs", "<all_urls>"]
+  "incognito": "split",
+  "permissions": ["activeTab"]
 }
